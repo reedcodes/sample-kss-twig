@@ -6,13 +6,106 @@
 
 
 
+// Header
+//
+// A global header can span the top of all pages across the site.
+//
+// Markup: header.twig
+//
+// Weight: 1
+//
+// Styleguide: Layout.Header
+
+.header {
+  padding: 1vh 2vw;
+  background-color: var(--cobalt);
+  color: var(--icewhite);
+  font-size: 3rem;
+  line-height: 1;
+
+  a {
+    --color-link: inherit;
+    --color-link-on: inherit;
+
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+
+    .fas {
+      margin-right: 0.5em;
+      padding: 0.5em;
+      border: 3px solid var(--goldenrod);
+      border-radius: 50%;
+      background-color: var(--purple);
+    }
+  }
+}
+
+
+
+// Nav
+//
+// A global menu gives a way to navigate through the site.
+//
+// Markup: nav.twig
+//
+// Weight: 2
+//
+// Styleguide: Layout.Nav
+
+.nav {
+  padding: 0.5em;
+  background-color: var(--darkgray);
+  color: var(--icewhite);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  &-list {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    --color-link: inherit;
+    --color-link-on: inherit;
+    --color-link-bg: var(--purple);
+    --color-link-bg-on: var(--cobalt);
+
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+}
+
+
+
+// Footer
+//
+// A global footer can span the bottom of all pages across the site.
+//
+// Markup: footer.twig
+//
+// Weight: 3
+//
+// Styleguide: Layout.Footer
+
+.footer {
+  border-top: 2px solid var(--cobalt);
+}
+
+
+
 // Card Grid
 //
 // A group of cards can be laid out in a grid pattern.
 //
 // Markup: card-grid.twig
 //
-// Weight: 1
+// Weight: 4
 //
 // Styleguide: Layout.CardGrid
 

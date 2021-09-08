@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Sample KSS",
   "devDependencies": {
-    "sass": "1.35.*",
-    "kss": "3.0.*"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "kss": "3.0.*",
+    "sass": "1.35.*"
   },
   "scripts": {
     "build:css": "sass --no-source-map src:dist/css",
