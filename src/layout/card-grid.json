@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "card_heading": "Scelerisque nam eros",
+      "card_description": "Bibendum parturient laoreet a a purus augue hac vestibulum ac sociosqu felis integer.",
+      "card_link_text": "A ut parturient",
+      "card_link_url": "index.html"
+    },
+    {
+      "card_heading": "Platea erat suspendisse",
+      "card_description": "Id cubilia scelerisque eu dictum enim mus suscipit a dignissim rutrum id sagittis lacinia ac etiam.",
+      "card_link_text": "Netus lacinia in aliquet.",
+      "card_link_url": "index.html"
+    },
+    {
+      "card_heading": "Leo imperdiet nascetur",
+      "card_description": "Dui scelerisque nullam adipiscing mi condimentum a laoreet mus tempor libero sagittis adipiscing.",
+      "card_link_text": "Potenti placerat nec",
+      "card_link_url": "index.html"
+    }
+  ]
+}

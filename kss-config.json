@@ -1,0 +1,14 @@
+{
+  "title": "Sample KSS",
+  "source": "src/",
+  "destination": "styleguide/",
+  "builder": "builder/michelangelo/",
+  "css": "../dist/css/styles.css",
+  "namespace": [
+    "color:src/color",
+    "text:src/text",
+    "link:src/link",
+    "card:src/card",
+    "layout:src/layout"
+  ]
+}

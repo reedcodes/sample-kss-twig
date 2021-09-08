@@ -1,0 +1,10 @@
+<div class="card-grid">
+  {% for card in cards %}
+    {% include "@card/card.twig" with {
+      card_heading: card.card_heading,
+      card_description: card.card_description,
+      card_link_text: card.card_link_text,
+      card_link_url: card.card_link_url
+    } %}
+  {% endfor %}
+</div>

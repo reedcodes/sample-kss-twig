@@ -1,0 +1,27 @@
+// Layout
+//
+// Weight: 5
+//
+// Styleguide: Layout
+
+
+
+// Card Grid
+//
+// A group of cards can be laid out in a grid pattern.
+//
+// Markup: card-grid.twig
+//
+// Weight: 1
+//
+// Styleguide: Layout.CardGrid
+
+.card-grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat( auto-fit, minmax( 25ch, 1fr ) );
+
+  .card {
+    --card-width: auto;
+  }
+}
