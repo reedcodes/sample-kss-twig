@@ -1,0 +1,40 @@
+// Text
+//
+// Weight: 2
+//
+// Styleguide: Text
+
+
+
+// Heading
+//
+// **Heading content** defines the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). ([from the HTML living standard](https://html.spec.whatwg.org/multipage/dom.html#heading-content))
+//
+// Markup: eg-heading.twig
+//
+// Weight: 1
+//
+// Styleguide: Text.Heading
+
+
+
+
+// Paragraph
+//
+// A **paragraph** is typically a run of phrasing content that forms a block of text with one or more sentences that discuss a particular topic, as in typography, but can also be used for more general thematic grouping. ([from the HTML living standard](https://html.spec.whatwg.org/multipage/dom.html#paragraph))
+//
+// Markup: eg-paragraph.twig
+//
+// Weight: 2
+//
+// Styleguide: Text.Paragraph
+
+
+
+
+// Blockquote
+
+blockquote {
+  padding-left: 1em;
+  border-left: 2px solid var(--crimson);
+}

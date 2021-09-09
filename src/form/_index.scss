@@ -1,0 +1,92 @@
+// Form
+//
+// Weight: 5
+//
+// Styleguide: Form
+
+
+
+.label {
+  margin-right: 1ch;
+}
+
+.input,
+.button {
+  border: 1px solid var(--darkgray);
+  font: inherit;
+}
+
+
+
+// Input
+//
+// A form field to enter text, numbers, emails, passwords, or other content.
+//
+// :focus-visible - when the input has focus, usually when the cursor is entered into the input field
+//
+// Markup: eg-input.twig
+//
+// Weight: 1
+//
+// Styleguide: Form.Input
+
+.input {
+  --outline-input-size: max( 2px, 0.08em );
+  --outline-input-style: solid;
+  --outline-input-color: var(--cobalt);
+
+  width: 25ch;
+  line-height: 1.65;
+
+  &:focus,
+  &:focus-visible {
+    outline-width: var(--outline-input-size);
+    outline-style: var(--outline-input-style);
+    outline-color: var(--outline-input-color);
+    outline-offset: var(--outline-input-size);
+  }
+
+  &:focus:not(:focus-visible) { outline: none; }
+}
+
+
+
+// Button
+//
+// A form element that triggers an action or other functionality.
+//
+// :hover - the state when a mouse is hovered over the link
+// :focus-visible - the state when the link has keyboard focus
+//
+// Markup: eg-button.twig
+//
+// Weight: 2
+//
+// Styleguide: Form.Button
+
+.button {
+  --color-button: var(--icewhite);
+  --color-button-bg: var(--purple);
+  --color-button-on: var(--icewhite);
+  --color-button-bg-on: var(--cobalt);
+
+  padding: 0.5em 1em;
+  background-color: var(--color-button-bg);
+  color: var(--color-button);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--color-button-bg-on);
+    color: var(--color-button-on);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.2em var(--color-button-on),
+                0 0 0 0.4em var(--color-button-bg-on);
+  }
+}

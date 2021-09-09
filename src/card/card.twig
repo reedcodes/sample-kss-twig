@@ -1,0 +1,16 @@
+<div class="card">
+  {% if card_heading %}
+    {% include "@text/heading.twig" with {
+      heading_level: 3,
+      heading_text: card_heading
+    } %}
+  {% endif %}
+
+  {% include "@text/paragraph.twig" with { paragraph_text: card_description } %}
+
+  {% include "@link/link.twig" with {
+    modifier_class: "cta-link",
+    link_text: card_link_text,
+    link_url: card_link_url
+  } %}
+</div>

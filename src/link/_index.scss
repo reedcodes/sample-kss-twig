@@ -1,0 +1,65 @@
+// Link
+//
+// **Links** are a conceptual construct, created by a, area, form, and link elements, that represent a connection between two resources, one of which is the current Document. ([from the HTML living standard](https://html.spec.whatwg.org/multipage/links.html))
+//
+// :hover - the state when a mouse is hovered over the link
+// :focus-visible - the state when the link has keyboard focus
+// .cta-link - links used for calls to action
+// .cta-link:hover - hover state for CTA links
+// .cta-link:focus-visible - focus state for CTA links
+//
+// Markup: eg-link.twig
+//
+// Weight: 3
+//
+// Styleguide: Link
+
+a {
+  --color-link: var(--cobalt);
+  --color-link-on: var(--purple);
+  --outline-link-size: max( 2px, 0.08em );
+
+  --color-link-bg: transparent;
+  --color-link-bg-on: transparent;
+
+  color: var(--color-link);
+  background-color: var(--color-link-bg);
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: var(--color-link-on);
+    background-color: var(--color-link-bg-on);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline-width: var(--outline-link-size);
+    outline-style: solid;
+    outline-color: currentColor;
+    outline-offset: var(--outline-link-size);
+  }
+
+  &:focus:not(:focus-visible) { outline: none; }
+}
+
+.cta-link {
+  --color-link: var(--icewhite);
+  --color-link-on: var(--icewhite);
+  --color-link-bg: var(--purple);
+  --color-link-bg-on: var(--cobalt);
+
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+
+  &:focus,
+  &:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.2em var(--color-link-on),
+                0 0 0 0.4em var(--color-link-bg-on);
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --body-text: var(--darkgray);
+  --body-bg: var(--icewhite);
+  --font-family: 'Public Sans', Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-text);
+  font-family: var(--font-family);
+}

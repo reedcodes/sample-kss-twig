@@ -1,0 +1,12 @@
+{%- set nav_aria_label = nav_aria_label | default( "global main" ) -%}
+
+<nav class="nav" aria-label="{{nav_aria_label}}">
+  <ul class="nav-list" role="list">
+    {%- for item in nav -%}
+      <li class="nav-item">{%- include "@link/link.twig" with {
+        link_text: item.title,
+        link_url: item.link
+      } -%}</li>
+    {%- endfor -%}
+  </ul>
+</nav>

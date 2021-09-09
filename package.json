@@ -1,0 +1,15 @@
+{
+  "name": "sample-kss",
+  "version": "1.0.0",
+  "description": "Sample KSS",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "kss": "3.0.*",
+    "sass": "1.35.*"
+  },
+  "scripts": {
+    "build:css": "sass --no-source-map src:dist/css",
+    "build:kss": "kss --config kss-config.json",
+    "build:ksscss": "sass --no-source-map builder/michelangelo/kss-assets:builder/michelangelo/kss-assets"
+  }
+}

@@ -1,0 +1,14 @@
+# Built and compiled files.
+dist
+styleguide
+
+# Working files.
+node_modules
+
+# Not needed for this sample repo.
+builder/twig
+
+# Personal macOS hidden files.
+.DS_Store
+._*
+Thumbs.db

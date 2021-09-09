@@ -1,0 +1,4 @@
+{% if input_label %}<label class="label" for="{{input_name}}">{{input_label}}</label>{% endif %}
+<input type="{{input_type}}" class="input input-{{input_type}} {{modifier_class}}" name="{{input_name}}"
+  {% if input_id %} id="{{input_id}}" {% endif %}
+  {% if input_required %} required aria-required="true" {% endif %} />
