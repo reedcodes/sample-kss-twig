@@ -157,6 +157,10 @@
       <article class="kss-section__markup">
         <pre><code class="language-markup"><script type="text/template">{{ section.markup|raw }}</script></code></pre>
       </article>
+
+      <article class="kss-section__markup">
+        <pre><code class="language-markup">@{{ section.markupFile }}  |  {{ section.source.filename }}</code></pre>
+      </article>
     {% endif %}
 
   {% endif %}
