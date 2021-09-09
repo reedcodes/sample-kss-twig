@@ -1,0 +1,2 @@
+Redirect /index.html https://samplekss.reedcodes.com/styleguide/
+ErrorDocument 404 https://samplekss.reedcodes.com/styleguide/
