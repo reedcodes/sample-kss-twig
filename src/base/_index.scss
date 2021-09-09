@@ -4,6 +4,8 @@
   --font-family: 'Public Sans', Helvetica, Arial, sans-serif;
 }
 
+* { box-sizing: border-box; }
+
 body {
   background-color: var(--body-bg);
   color: var(--body-text);

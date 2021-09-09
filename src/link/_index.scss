@@ -34,13 +34,13 @@ a {
 
   &:focus,
   &:focus-visible {
-    outline-size: var(--outline-link-size);
+    outline-width: var(--outline-link-size);
     outline-style: solid;
     outline-color: currentColor;
     outline-offset: var(--outline-link-size);
   }
 
-  :focus:not(:focus-visible) { outline: none; }
+  &:focus:not(:focus-visible) { outline: none; }
 }
 
 .cta-link {

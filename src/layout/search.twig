@@ -1,0 +1,11 @@
+<form class="search" name="{{search_name}}" {% if search_id %} id="{{search_id}}" {% endif %} role="search" method="{{search_method | default("get") }}" action="{{search_action}}">
+  {% include "@form/input.twig" with {
+    input_type: "text",
+    input_label: search_input_label | default("Search this site"),
+    input_name: search_input_name | default("search-input")
+  } %}
+  {% include "@form/button.twig" with {
+    button_type: "search",
+    button_text: search_button_text | default("Search")
+  } %}
+</form>

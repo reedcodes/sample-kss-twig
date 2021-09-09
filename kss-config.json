@@ -9,6 +9,7 @@
     "text:src/text",
     "link:src/link",
     "card:src/card",
+    "form:src/form",
     "layout:src/layout"
   ]
 }
