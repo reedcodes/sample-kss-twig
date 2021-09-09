@@ -30,8 +30,6 @@ $kss-markdown-headings-color: $cowabunga;
 
   a {
     color: $blue;
-    font-size: rem(16px);
-    // text-decoration: none;
   }
 
   a:hover,
@@ -68,19 +66,7 @@ $kss-markdown-headings-color: $cowabunga;
   ul,
   p {
     margin-bottom: rem(24px);
-    font-size: rem(16px);
   }
-
-  ol,
-  ul {
-    padding-left: 40px;
-    list-style-position: outside;
-    font-size: rem(16px);
-  }
-
-  ol { list-style-type: decimal; }
-
-  ul { list-style-type: circle; }
 
   img,
   video,

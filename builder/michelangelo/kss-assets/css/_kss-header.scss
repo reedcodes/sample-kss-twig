@@ -26,8 +26,7 @@ $bar-width: 30px;
 .kss-header__inner { position: relative; }
 
 .kss-header__title {
-  font-size: rem(16px);
-  line-height: 25px;
+  line-height: 1.5;
   text-align: left;
 
   @include mq(min, 568px) { font-size: rem(20px); }

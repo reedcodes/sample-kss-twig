@@ -27,8 +27,6 @@ $kss-modifiers-name-color: $cowabunga;
   @include mq(min, 1440px) { padding-left: calc(15% + 20px); }
 }
 
-// .kss-section { margin-bottom: 40px; }
-
 .kss-section__content {
   border: 1px solid $gray;
   padding: 1em;
@@ -92,7 +90,6 @@ $kss-modifiers-name-color: $cowabunga;
 
 .kss-parameters__description {
   margin: 0;
-  font-size: rem(16px);
   line-height: 1.5;
 }
 
@@ -124,7 +121,6 @@ $kss-modifiers-name-color: $cowabunga;
   ul,
   p {
     margin: 0;
-    font-size: rem(16px);
   }
 
   a {
@@ -149,7 +145,6 @@ $kss-modifiers-name-color: $cowabunga;
 .kss-section__source {
   margin: 0;
   color: darken($gray, 30%);
-  font-size: rem(14px);
 }
 
 .kss-section__modifiers {
@@ -172,7 +167,6 @@ $kss-modifiers-name-color: $cowabunga;
 .kss-modifiers__name {
   margin: 0;
   margin-bottom: 5px;
-  font-size: rem(16px);
   font-weight: 400;
   color: $kss-modifiers-name-color;
 }
@@ -193,4 +187,12 @@ $kss-modifiers-name-color: $cowabunga;
   &:last-child { margin-bottom: 0; }
 }
 
-.kss-section__markup pre[class*=language-] { margin: 0; }
+.kss-section__markup {
+  :is(
+    pre[class*=language-],
+    code[class*=language-]
+  ) {
+    margin: 0;
+    font-family: 'JetBrains Mono', Consolas, Monaco, 'Ubuntu Mono', monospace;
+  }
+}
