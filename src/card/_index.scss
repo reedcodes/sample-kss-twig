@@ -9,16 +9,14 @@
 // Styleguide: Card
 
 .card {
-  --card-width: max(25ch, 50%);
-  --card-padding: 1em;
-  --card-border-color: var(--color-primary);
-
-  width: var(--card-width);
-  padding: var(--card-padding);
-  border: 1px solid var(--card-border-color);
-  border-radius: var(--card-padding);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: var(--card-width, max(25ch, 50%));
+  padding: var(--card-padding, 1em);
+  border: 1px solid var(--card-border-color, var(--color-secondary));
+  border-radius: var(--card-border-radius, 1em);
 
   :is( h2, h3, h4 ):first-child {
-    margin-top: 0;
+    margin-block: 0;
   }
 }
