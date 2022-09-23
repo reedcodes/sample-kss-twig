@@ -1,8 +1,9 @@
 {
   "title": "Sample KSS",
-  "source": "src/",
-  "destination": "styleguide/",
-  "builder": "builder/michelangelo/",
+  "homepage": "../src/homepage.md",
+  "source": "../src/",
+  "destination": "../styleguide/",
+  "builder": "../builder/michelangelo/",
   "css": "../dist/css/styles.css",
   "namespace": [
     "color:src/color",
