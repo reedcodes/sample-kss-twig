@@ -6,6 +6,7 @@
   "css": "../dist/css/styles.css",
   "namespace": [
     "color:src/color",
+    "icons:src/icons",
     "text:src/text",
     "link:src/link",
     "card:src/card",

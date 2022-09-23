@@ -1,7 +1,7 @@
 {%- set header_aria_label = header_aria_label | default( "global site" ) -%}
 
 {%- set site_logo -%}
-  <span class="fas {{site_logo_icon}}" aria-hidden="true"></span>
+  {%- include "@icons/grad-cap.svg" -%}
 {%- endset -%}
 
 <header class="header" aria-label="{{header_aria_label}}">
