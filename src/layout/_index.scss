@@ -17,19 +17,37 @@
 // Styleguide: Layout.Header
 
 .header {
-  padding: 1vh 2vw;
+  padding-block: min(2vh, 1em);
+  padding-inline: min(2vw, 1em);
   background-color: var(--color-primary);
-  color: var(--color-on-primary);
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
+
+  .site-title {
+    --heading-text-color: var(--color-secondary);
+
+    margin-block: 0;
+
+    svg {
+      fill: transparent;
+      stroke: currentColor;
+      width: auto;
+      height: 2em;
+    }
+  }
 
   a {
     --color-link: inherit;
     --color-link-on: inherit;
 
+    display: inline-block;
     text-decoration: none;
 
     &:hover { text-decoration: underline; }
+
+    span {
+      vertical-align: middle;
+    }
   }
 }
 
