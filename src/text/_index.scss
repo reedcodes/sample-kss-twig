@@ -16,6 +16,9 @@
 //
 // Styleguide: Text.Heading
 
+:is(h1, h2, h3) {
+  color: var(--heading-text-color, var(--color-on-tertiary));
+}
 
 
 

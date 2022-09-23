@@ -16,7 +16,7 @@
   border: 1px solid var(--card-border-color, var(--color-secondary));
   border-radius: var(--card-border-radius, 1em);
 
-  :is( h2, h3, h4 ):first-child {
+  :is(h2, h3):first-child {
     margin-block: 0;
   }
 }
