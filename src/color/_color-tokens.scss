@@ -1,0 +1,43 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in config/color-tokens.js
+ */
+
+$color-primary: hsla(60, 1%, 14%, 1) !default;
+$color-on-primary: hsl(60, 0.4%, 54.3%) !default;
+$color-secondary: hsla(44, 88%, 66%, 1) !default;
+$color-on-secondary: hsl(43.69999999999999, 70.8%, 25.5%) !default;
+$color-tertiary: hsla(150, 14%, 84%, 1) !default;
+$color-on-tertiary: hsl(147.3, 5.9%, 36.3%) !default;
+$color-background: hsla(81, 28%, 90%, 1) !default;
+$color-on-background: hsl(77.60000000000002, 8.5%, 39%) !default;
+$color-foreground: hsla(120, 2%, 20%, 1) !default;
+$color-on-foreground: hsl(120, 0.5%, 60.6%) !default;
+
+$base-color-tokens: ("primary", "secondary", "tertiary", "background", "foreground");
+
+$color-tokens: (
+  "color-primary": $color-primary,
+  "color-on-primary": $color-on-primary,
+  "color-secondary": $color-secondary,
+  "color-on-secondary": $color-on-secondary,
+  "color-tertiary": $color-tertiary,
+  "color-on-tertiary": $color-on-tertiary,
+  "color-background": $color-background,
+  "color-on-background": $color-on-background,
+  "color-foreground": $color-foreground,
+  "color-on-foreground": $color-on-foreground
+) !default;
+
+@mixin color-tokens() {
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+  --color-tertiary: #{$color-tertiary};
+  --color-on-tertiary: #{$color-on-tertiary};
+  --color-background: #{$color-background};
+  --color-on-background: #{$color-on-background};
+  --color-foreground: #{$color-foreground};
+  --color-on-foreground: #{$color-on-foreground};
+}

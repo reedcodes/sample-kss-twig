@@ -18,8 +18,8 @@
 
 .header {
   padding: 1vh 2vw;
-  background-color: var(--cobalt);
-  color: var(--icewhite);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
   font-size: 3rem;
   line-height: 1;
 
@@ -30,14 +30,6 @@
     text-decoration: none;
 
     &:hover { text-decoration: underline; }
-
-    .fas {
-      margin-right: 0.5em;
-      padding: 0.5em;
-      border: 3px solid var(--goldenrod);
-      border-radius: 50%;
-      background-color: var(--purple);
-    }
   }
 }
 
@@ -55,8 +47,8 @@
 
 .nav {
   padding: 0.5em;
-  background-color: var(--darkgray);
-  color: var(--icewhite);
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -72,8 +64,8 @@
   a {
     --color-link: inherit;
     --color-link-on: inherit;
-    --color-link-bg: var(--purple);
-    --color-link-bg-on: var(--cobalt);
+    --color-link-bg: var(--color-tertiary);
+    --color-link-bg-on: var(--color-on-tertiary);
 
     display: inline-block;
     padding: 0.5em 1em;
@@ -131,7 +123,7 @@
 
 .footer {
   margin-top: 2vh;
-  border-top: 2px solid var(--cobalt);
+  border-top: 2px solid var(--color-primary);
 }
 
 

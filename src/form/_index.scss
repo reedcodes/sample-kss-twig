@@ -12,7 +12,7 @@
 
 .input,
 .button {
-  border: 1px solid var(--darkgray);
+  border: 1px solid var(--color-primary);
   font: inherit;
 }
 
@@ -33,7 +33,7 @@
 .input {
   --outline-input-size: max( 2px, 0.08em );
   --outline-input-style: solid;
-  --outline-input-color: var(--cobalt);
+  --outline-input-color: var(--color-secondary);
 
   width: 25ch;
   line-height: 1.65;
@@ -65,10 +65,10 @@
 // Styleguide: Form.Button
 
 .button {
-  --color-button: var(--icewhite);
-  --color-button-bg: var(--purple);
-  --color-button-on: var(--icewhite);
-  --color-button-bg-on: var(--cobalt);
+  --color-button: var(--color-on-secondary);
+  --color-button-bg: var(--color-secondary);
+  --color-button-on: var(--color-secondary);
+  --color-button-bg-on: var(--color-on-secondary);
 
   padding: 0.5em 1em;
   background-color: var(--color-button-bg);

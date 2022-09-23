@@ -15,8 +15,8 @@
 // Styleguide: Link
 
 a {
-  --color-link: var(--cobalt);
-  --color-link-on: var(--purple);
+  --color-link: var(--color-primary);
+  --color-link-on: var(--color-on-background);
   --outline-link-size: max( 2px, 0.08em );
 
   --color-link-bg: transparent;
@@ -44,10 +44,10 @@ a {
 }
 
 .cta-link {
-  --color-link: var(--icewhite);
-  --color-link-on: var(--icewhite);
-  --color-link-bg: var(--purple);
-  --color-link-bg-on: var(--cobalt);
+  --color-link: var(--color-on-secondary);
+  --color-link-on: var(--color-secondary);
+  --color-link-bg: var(--color-secondary);
+  --color-link-bg-on: var(--color-on-secondary);
 
   display: inline-block;
   padding: 0.5em 0.75em;
