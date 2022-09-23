@@ -66,7 +66,6 @@
 .nav {
   padding: 0.5em;
   background-color: var(--color-secondary);
-  color: var(--color-on-secondary);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -80,10 +79,10 @@
   }
 
   a {
-    --color-link: inherit;
-    --color-link-on: inherit;
-    --color-link-bg: var(--color-tertiary);
-    --color-link-bg-on: var(--color-on-tertiary);
+    --color-link: var(--color-tertiary);
+    --color-link-on: var(--color-primary);
+    --color-link-bg: var(--color-primary);
+    --color-link-bg-on: var(--color-tertiary);
 
     display: inline-block;
     padding: 0.5em 1em;
