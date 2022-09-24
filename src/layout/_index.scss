@@ -17,26 +17,34 @@
 // Styleguide: Layout.Header
 
 .header {
-  padding: 1vh 2vw;
-  background-color: var(--cobalt);
-  color: var(--icewhite);
-  font-size: 3rem;
+  padding-block: min(2vh, 1em);
+  padding-inline: min(2vw, 1em);
+  background-color: var(--color-primary);
+  font-size: 2rem;
   line-height: 1;
 
-  a {
-    --color-link: inherit;
-    --color-link-on: inherit;
+  .site-title {
+    margin-block: 0;
 
+    svg {
+      fill: transparent;
+      stroke: currentColor;
+      width: auto;
+      height: 2em;
+    }
+  }
+
+  a {
+    --color-link: var(--color-secondary);
+    --color-link-on: var(--color-tertiary);
+
+    display: inline-block;
     text-decoration: none;
 
     &:hover { text-decoration: underline; }
 
-    .fas {
-      margin-right: 0.5em;
-      padding: 0.5em;
-      border: 3px solid var(--goldenrod);
-      border-radius: 50%;
-      background-color: var(--purple);
+    span {
+      vertical-align: middle;
     }
   }
 }
@@ -55,8 +63,7 @@
 
 .nav {
   padding: 0.5em;
-  background-color: var(--darkgray);
-  color: var(--icewhite);
+  background-color: var(--color-secondary);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -70,10 +77,10 @@
   }
 
   a {
-    --color-link: inherit;
-    --color-link-on: inherit;
-    --color-link-bg: var(--purple);
-    --color-link-bg-on: var(--cobalt);
+    --color-link: var(--color-tertiary);
+    --color-link-on: var(--color-primary);
+    --color-link-bg: var(--color-primary);
+    --color-link-bg-on: var(--color-tertiary);
 
     display: inline-block;
     padding: 0.5em 1em;
@@ -131,7 +138,7 @@
 
 .footer {
   margin-top: 2vh;
-  border-top: 2px solid var(--cobalt);
+  border-top: 2px solid var(--color-primary);
 }
 
 

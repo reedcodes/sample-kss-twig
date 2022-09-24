@@ -1,23 +1,22 @@
 // Color
 //
+// These color represent the main palette of the website. They are first listed with their variable or property, next the color value, and finally the common name.
+//
+// [This color palette generated at Coolors.co](https://coolors.co/242423-f5cb5c-cfdbd5-e8eddf-333533)
+//
 // Colors:
-// --darkgray: rgb(37, 41, 53) - Dark Gray
-// --purple: rgb(125, 59, 106) - Purple
-// --cobalt: rgb(0, 121, 140) - Cobalt
-// --crimson: rgb(208, 55, 17) - Crimson
-// --goldenrod: rgb(246, 174, 45) - Goldenrod
-// --icewhite: rgb(248, 245, 242) - Ice White
+// --color-primary: hsla(60, 1%, 14%, 1) - Eerie Black
+// --color-secondary: hsla(44, 88%, 66%, 1) - Maize Crayola
+// --color-tertiary: hsla(150, 14%, 84%, 1) - Gainsboro
+// --color-background: hsla(81, 28%, 90%, 1) - Alabaster
+// --color-foreground: hsla(120, 2%, 20%, 1) - Jet
 //
 // Weight: 1
 //
 // Styleguide: Color
 
+@use 'color-tokens' as *;
 
 :root {
-  --darkgray: rgb(37, 41, 53);
-  --purple: rgb(125, 59, 106);
-  --cobalt: rgb(0, 121, 140);
-  --crimson: rgb(208, 55, 17);
-  --goldenrod: rgb(246, 174, 45);
-  --icewhite: rgb(248, 245, 242);
+  @include color-tokens();
 }
