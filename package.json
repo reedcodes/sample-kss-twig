@@ -1,6 +1,6 @@
 {
   "name": "sample-kss",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sample KSS",
   "devDependencies": {
     "a11y-color-tokens": "^0.6.0",
