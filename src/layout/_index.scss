@@ -24,8 +24,6 @@
   line-height: 1;
 
   .site-title {
-    --heading-text-color: var(--color-secondary);
-
     margin-block: 0;
 
     svg {
@@ -37,8 +35,8 @@
   }
 
   a {
-    --color-link: inherit;
-    --color-link-on: inherit;
+    --color-link: var(--color-secondary);
+    --color-link-on: var(--color-tertiary);
 
     display: inline-block;
     text-decoration: none;
