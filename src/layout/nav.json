@@ -1,16 +1,16 @@
 {
   "nav": [
     {
-      "title": "Parturient",
-      "link": "#"
+      "title": "Lacan",
+      "link": "https://example.com/"
     },
     {
-      "title": "Lacinia",
-      "link": "#"
+      "title": "DeBord",
+      "link": "https://example.com/"
     },
     {
-      "title": "Aliquet",
-      "link": "#"
+      "title": "Baudrillard",
+      "link": "https://example.com/"
     }
   ]
 }

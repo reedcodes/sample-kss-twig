@@ -1,14 +1,9 @@
 {%- set header_aria_label = header_aria_label | default( "global site" ) -%}
 
-{%- set site_title_text -%}
-  <span class="site-title-logo">{%- include "@icons/grad-cap.svg" -%}</span>
-  <span class="site-title-text">{{site_title}}</span>
-{%- endset -%}
-
-<header class="header" aria-label="{{header_aria_label}}">
+<header class="header" aria-label="{{- header_aria_label -}}">
   <h1 class="site-title">
     {%- include "@link/link.twig" with {
-      link_text: site_title_text,
+      link_text: site_title,
       link_url: site_url
     } -%}
   </h1>

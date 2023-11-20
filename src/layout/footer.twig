@@ -1,5 +1,5 @@
 {%- set footer_aria_label = footer_aria_label | default( "global information" ) -%}
 
-<footer class="footer" aria-label="{{footer_aria_label}}">
-  <p class="footer-copyright">© {{"now"| date( "Y" )}} {{site_title}}</p>
+<footer class="footer" aria-label="{{- footer_aria_label -}}">
+  <p class="footer-copyright">© {{ "now" | date( "Y" ) }} {{ site_title -}}</p>
 </footer>
