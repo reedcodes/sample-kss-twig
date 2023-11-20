@@ -1,3 +1,5 @@
 {%- set heading_level = heading_level | default(2) -%}
 
-<h{{heading_level}} {% if heading_id %}id="{{heading_id}}"{% endif %} class="text-heading {{modifier_class}}">{{heading_text}}</h{{heading_level}}>
+<h{{heading_level}} class="text-heading">
+  {{heading_text}}
+</h{{heading_level}}>

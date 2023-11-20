@@ -8,7 +8,7 @@
 // .cta-link:hover - hover state for CTA links
 // .cta-link:focus - focus state for CTA links
 //
-// Markup: eg-link.twig
+// Markup: link.twig
 //
 // Weight: 3
 //
@@ -18,12 +18,15 @@ a {
   color: var(--color-link, var(--color-primary));
   background-color: var(--color-link-bg, transparent);
 
+  &.pseudo-class-hover,
+  &.pseudo-class-focus,
   &:hover,
   &:focus {
     color: var(--color-link-on, var(--color-on-background));
     background-color: var(--color-link-bg-on, transparent);
   }
 
+  &.pseudo-class-focus,
   &:focus {
     outline-width: var(--outline-link-width, max( 2px, 0.08em ));
     outline-style: solid;
@@ -45,6 +48,7 @@ a {
   letter-spacing: 0.05em;
   text-decoration: none;
 
+  &.pseudo-class-focus,
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2em var(--color-link-on),

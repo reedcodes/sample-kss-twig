@@ -1,22 +1,22 @@
 {
   "cards": [
     {
-      "card_heading": "Scelerisque nam eros",
-      "card_description": "Bibendum parturient laoreet a a purus augue hac vestibulum ac sociosqu felis integer.",
-      "card_link_text": "A ut parturient",
-      "card_link_url": "#"
+      "card_heading": "Subtextual theory",
+      "card_description": "Sartre promotes the use of subtextual theory to deconstruct class.",
+      "card_link_text": "Semiotic rationalism",
+      "card_link_url": "https://example.com/"
     },
     {
-      "card_heading": "Platea erat suspendisse",
-      "card_description": "Id cubilia scelerisque eu dictum enim mus suscipit a dignissim rutrum id sagittis lacinia ac etiam.",
-      "card_link_text": "Netus lacinia in aliquet",
-      "card_link_url": "#"
+      "card_heading": "Subcultural narrative",
+      "card_description": "Bataille suggests the use of subcultural narrative to attack outmoded perceptions of sexual identity.",
+      "card_link_text": "Semiotic rationalism",
+      "card_link_url": "https://example.com/"
     },
     {
-      "card_heading": "Leo imperdiet nascetur",
-      "card_description": "Dui scelerisque nullam adipiscing mi condimentum a laoreet mus tempor libero sagittis adipiscing.",
-      "card_link_text": "Potenti placerat nec",
-      "card_link_url": "#"
+      "card_heading": "Postcultural situationism",
+      "card_description": "A number of theories concerning poststructuralist situationism may be found.",
+      "card_link_text": "Semiotic rationalism",
+      "card_link_url": "https://example.com/"
     }
   ]
 }
